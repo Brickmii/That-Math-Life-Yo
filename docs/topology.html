@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Topology — That Math Life Yo</title>
+<link rel="stylesheet" href="/That-Math-Life-Yo/style.css">
+</head>
+<body>
+<header>
+  <nav class="top-nav">
+    <a href="/That-Math-Life-Yo/" class="nav-title">That Math Life Yo</a>
+    <div class="nav-links">
+      <a href="/That-Math-Life-Yo/">Contents</a>
+      <a href="/That-Math-Life-Yo/That_Math_Life_Yo.docx" class="download-link">Download .docx</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title">Topology</h1>
+  <p class="subtitle">definitely knot this</p>
+  <h2>Pick Up a Rubik&#x27;s Cube</h2>
+<p>Seriously. If you&#x27;ve got one, grab it. If not, picture one.</p>
+<p>Scramble it. Twist every face. Make it look like chaos. Random colors everywhere. No pattern. Total mess.</p>
+<p>Now here&#x27;s the question: is it still a cube?</p>
+<p>Obviously. You didn&#x27;t break it. You didn&#x27;t add pieces or remove them. You didn&#x27;t melt it or tear it apart. You transformed it—radically—but certain properties survived the transformation. It still has 6 faces. Still has 9 squares per face. Still has 54 colored stickers. Still has the same internal mechanism connecting everything.</p>
+<p>That&#x27;s topology. The study of what survives transformation.</p>
+<p>Geometry cares about measurement—angles, distances, areas. Topology doesn&#x27;t. In topology, you can stretch, bend, twist, and deform to your heart&#x27;s content. The only things you can&#x27;t do are tear (break connections) and glue (create new connections). As long as you don&#x27;t tear or glue, the topology doesn&#x27;t change.</p>
+<h2>The Coffee Mug Problem</h2>
+<p>Here&#x27;s the example every topology class uses, and for good reason.</p>
+<p>A coffee mug and a donut are the same shape.</p>
+<p>Sounds insane. One is a cylinder with a handle. The other is a ring of fried dough. But topologically? Both are solid objects with exactly one hole through them. The mug&#x27;s hole is the handle. The donut&#x27;s hole is the, well, donut hole.</p>
+<p>If the mug were made of clay, you could smoothly reshape it into a donut without tearing or gluing. Shrink the cup part, expand the handle, round everything out. The one hole persists through the entire deformation. The geometry changes completely—the shape looks nothing like it did—but the topology is identical.</p>
+<p>A sphere, on the other hand, has zero holes. You cannot deform a sphere into a donut without punching a hole through it. That would be tearing—a topological no-no. So a sphere and a donut are topologically DIFFERENT. But a donut and a coffee mug are topologically the SAME.</p>
+<p>Topology classifies shapes by their holes. Zero holes: sphere. One hole: donut (and coffee mug). Two holes: double donut. And so on. The number of holes is a <strong>topological invariant</strong>—it survives any deformation.</p>
+<h2>Invariants: What Doesn&#x27;t Change</h2>
+<p>Last chapter we had eigenvalues—what doesn&#x27;t change under a matrix transformation. Now we have topological invariants—what doesn&#x27;t change under continuous deformation. Math keeps asking the same question at every level: what&#x27;s preserved when everything else moves?</p>
+<p>The most fundamental topological invariant is called the <strong>Euler characteristic</strong>, named after Leonhard Euler (pronounced &quot;Oiler&quot;—math is cruel to pronunciation).</p>
+<p>For any polyhedron—a solid shape with flat faces—the Euler characteristic is:</p>
+<h2>V - E + F = 2</h2>
+<p>V = vertices (corners). E = edges. F = faces.</p>
+<p>A cube: 8 vertices, 12 edges, 6 faces. 8 - 12 + 6 = 2. ✓</p>
+<p>A tetrahedron: 4 vertices, 6 edges, 4 faces. 4 - 6 + 4 = 2. ✓</p>
+<p>A dodecahedron: 20 vertices, 30 edges, 12 faces. 20 - 30 + 12 = 2. ✓</p>
+<p>Different shapes. Different geometry. Same Euler characteristic. Because they&#x27;re all topologically equivalent to a sphere—zero holes.</p>
+<p>For a donut (torus), the Euler characteristic is 0. Different from the sphere&#x27;s 2. That number—that invariant—is the mathematical proof that you can&#x27;t deform a sphere into a donut.</p>
+<h2>The Rubik&#x27;s Cube, Revisited</h2>
+<p>Back to the cube. Here&#x27;s what makes it a topology masterpiece.</p>
+<p>Every legal move is a transformation that preserves the topology. Twisting a face doesn&#x27;t break connections—it rearranges them. The group of all possible scrambles is a mathematical object called the <strong>Rubik&#x27;s group</strong>. It contains exactly 43,252,003,274,489,856,000 elements. That&#x27;s 43 quintillion possible configurations.</p>
+<p>But here&#x27;s the wild part: every single one of those 43 quintillion configurations can be solved in 20 moves or fewer. This was proven in 2010 by a team that used massive computing power to check every possible state. They called 20 &quot;God&#x27;s number&quot;—the diameter of the Rubik&#x27;s group.</p>
+<p>What that means topologically: the &quot;space&quot; of Rubik&#x27;s cube configurations is bounded. You can&#x27;t get infinitely lost. No matter how chaotic it looks, you&#x27;re never more than 20 moves from solved. The apparent chaos has structure. The disorder has a ceiling. That&#x27;s topology telling you about the shape of a possibility space.</p>
+<h2>Knots: Identity Through Deformation</h2>
+<p>Tie a knot in a rope and connect the ends to form a loop. Now here&#x27;s the question: without cutting, can you untangle it into a simple circle?</p>
+<p>If yes: it was the <strong>unknot</strong>—a circle that just looked tangled.</p>
+<p>If no: it&#x27;s a genuine knot—topologically distinct from a circle.</p>
+<p>Knot theory is a real branch of topology, and it&#x27;s wilder than it sounds. There are infinitely many distinct knots—arrangements that cannot be deformed into each other no matter how cleverly you manipulate the rope (without cutting).</p>
+<p>The simplest real knot is the <strong>trefoil</strong>—three crossings forming a clover-like shape. You cannot untangle a trefoil into a circle. It has been mathematically proven. The three-dimensional twist is &quot;locked in&quot; to the topology.</p>
+<p>How do you prove two knots are different? You find an invariant—some number or property you can compute for each knot that doesn&#x27;t change when you deform the knot. If the invariant is different, the knots are different. Same idea as the Euler characteristic, applied to tangles.</p>
+<p>This isn&#x27;t abstract nonsense, by the way. DNA is a knot. Literally. Your genetic code forms topological structures, and enzymes called topoisomerases exist specifically to manage DNA&#x27;s topology—unknotting it so it can be read, re-knotting it for storage. Biology runs on knot theory.</p>
+<h2>Manifolds: Surfaces and Beyond</h2>
+<p>A <strong>manifold</strong> is a space that locally looks simple but globally can be wild.</p>
+<p>Stand on the Earth. Look around. Looks flat, right? Locally, the Earth looks like a flat plane. But globally, it&#x27;s a sphere. That&#x27;s a manifold—a space that is locally Euclidean (flat, normal geometry) but globally has a different topology.</p>
+<p>A circle is a 1-dimensional manifold—zoom in close enough and it looks like a straight line. A sphere is a 2-dimensional manifold—zoom in and it looks like a flat plane. A donut is also a 2-dimensional manifold, but with different global topology than a sphere.</p>
+<p>Einstein&#x27;s general relativity says the universe itself is a manifold—space-time is locally flat (special relativity works in small regions) but globally curved by the distribution of mass and energy. The topology of the universe is an open question. Is it a sphere? A donut? Something else entirely? We don&#x27;t know yet. Topology is still working on it.</p>
+<h2>Definitely Knot This</h2>
+<p>Topology is geometry&#x27;s psychedelic cousin. Where geometry obsesses over exact measurements, topology says: forget the measurements. What&#x27;s the shape of the thing? How many holes? How is it connected? What survives when you stretch and squish?</p>
+<p>The Rubik&#x27;s cube teaches you that massive apparent complexity can have bounded structure—43 quintillion states, maximum 20 moves from solved. The coffee mug teaches you that radically different appearances can hide identical topology. Knots teach you that some tangles are real and some are illusions, and math can tell the difference.</p>
+<p>The lesson of topology: don&#x27;t trust appearances. Two things that look the same might be topologically different. Two things that look completely different might be the same. The truth is in the invariants—the properties that survive transformation.</p>
+<p>Same math that tells you a mug is a donut can tell you whether a problem has a solution, whether a network is connected, whether a space has an edge. Not by measuring. By understanding structure.</p>
+<p>Definitely knot what you expected. But definitely what math is.</p>
+</main>
+<footer>
+  <nav class="chapter-nav">
+    <div class="nav-prev"><a href="/That-Math-Life-Yo/boolean-algebra.html">&larr; Boolean Algebra</a></div>
+    <div class="nav-toc"><a href="/That-Math-Life-Yo/">Table of Contents</a></div>
+    <div class="nav-next"><a href="/That-Math-Life-Yo/game-theory.html">Game Theory &rarr;</a></div>
+  </nav>
+</footer>
+</body>
+</html>

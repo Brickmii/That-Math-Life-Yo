@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linear Algebra — That Math Life Yo</title>
+<link rel="stylesheet" href="/That-Math-Life-Yo/style.css">
+</head>
+<body>
+<header>
+  <nav class="top-nav">
+    <a href="/That-Math-Life-Yo/" class="nav-title">That Math Life Yo</a>
+    <div class="nav-links">
+      <a href="/That-Math-Life-Yo/">Contents</a>
+      <a href="/That-Math-Life-Yo/That_Math_Life_Yo.docx" class="download-link">Download .docx</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title">Linear Algebra</h1>
+  <p class="subtitle">Matrix Re-lative</p>
+  <h2>Honest Talk</h2>
+<p>I will start this section out honestly by telling you this is not easy math, because it is not short math. Linear algebra is exactly what it sounds like, algebra that delineates degrees of freedom, or more simply paths to take. Point blank, they also call this shit matrix math. Why? Because it is often performed in what&#x27;s known as a hex calculator. Sound crazy? It is. It&#x27;s like calculus for calculations at the same time. Now how do you do it without a hex calculator and what do they call paths? Paths are known as vectors and they are made of 2 parts, a magnitude and a direction. And to perform without a calculator you have several parts that must be accounted for. Being honest, you don&#x27;t do this in your every day life but we&#x27;ll discuss it simply to demystify Einstein… because that&#x27;s not that hard. If Eigen do this, yougen as well…</p>
+<h2>What&#x27;s a Vector?</h2>
+<p>In the last chapter we talked about probability as paths. In this chapter, the paths get formal names. A <strong>vector</strong> is a path with two properties: how far it goes (magnitude) and which way it points (direction).</p>
+<p>Think of it like driving. &quot;60 miles&quot; is a magnitude. &quot;North&quot; is a direction. &quot;60 miles north&quot; is a vector. It tells you not just how much, but where.</p>
+<p>A number by itself—like 5 or -3—is called a scalar. It only has magnitude. A vector has magnitude AND direction. That&#x27;s the upgrade. Scalars tell you how much. Vectors tell you how much AND where.</p>
+<p>We write vectors as lists of numbers. In 2D: [3, 4] means &quot;go 3 in the x-direction and 4 in the y-direction.&quot; In 3D: [1, 2, 5] means &quot;go 1 in x, 2 in y, 5 in z.&quot; Each number tells you how far to go along one axis—one degree of freedom.</p>
+<p>The magnitude of [3, 4] is 5. Why? Pythagorean theorem. The triangle chapter comes back. √(3² + 4²) = √(9 + 16) = √25 = 5. The magnitude is the hypotenuse—the actual distance traveled when you combine both directions.</p>
+<p>And here&#x27;s the thing: vectors don&#x27;t care where they start. [3, 4] starting from the origin is the same vector as [3, 4] starting from point (10, 20). The vector describes the MOTION, not the position. It&#x27;s a displacement, a change. Sound familiar? Derivatives were rates of change. Vectors are directions of change. Math keeps building on itself.</p>
+<h2>Adding Vectors: Combining Motions</h2>
+<p>Vector addition is simple and beautiful. You just add the corresponding components.</p>
+<p>[3, 4] + [1, -2] = [4, 2]</p>
+<p>Geometrically, this means: take one path, then take the other path from where you ended up. The result is where you land. It&#x27;s like walking 3 blocks east and 4 blocks north, then 1 block east and 2 blocks south. You end up 4 blocks east and 2 blocks north.</p>
+<p>This is why vectors matter for physics. Forces are vectors. If two forces act on an object, the result is the vector sum. Gravity pulls down [0, -9.8]. You push right [5, 0]. The object experiences [5, -9.8]—it moves right AND falls. Both motions happen simultaneously and the vector addition gives you the combined result.</p>
+<h2>Matrices: The Machine That Transforms Everything at Once</h2>
+<p>Okay. Here&#x27;s where linear algebra earns its reputation.</p>
+<p>A <strong>matrix</strong> is a grid of numbers. 2×2, 3×3, whatever dimensions you need. And what a matrix DOES is transform vectors. You put a vector in, a different vector comes out.</p>
+<p><em>| a  b |     | x |     | ax + by |</em></p>
+<p><em>| c  d |  ×  | y |  =  | cx + dy |</em></p>
+<p>That&#x27;s a 2×2 matrix transforming a 2D vector. The matrix takes the input vector [x, y] and produces a new vector [ax + by, cx + dy]. It&#x27;s a function—but instead of operating on a single number, it operates on an entire vector. An entire path.</p>
+<p>What kinds of transformations? Rotation. Scaling. Stretching. Shearing. Reflection. Every linear transformation you can imagine is a matrix. Spin something 45 degrees? There&#x27;s a matrix for that. Double the size? Matrix. Mirror it across an axis? Matrix. All of them are just grids of numbers that, when multiplied by a vector, produce the transformed version.</p>
+<p>This is why it&#x27;s called &quot;matrix math&quot; and why they use hex calculators and computers. When you have a 3D object with thousands of points, and you want to rotate it, you multiply EVERY point by the same rotation matrix. Thousands of vector transformations, all at once, all using the same grid of numbers. That&#x27;s computer graphics. That&#x27;s video games. That&#x27;s every 3D movie you&#x27;ve ever seen.</p>
+<h2>Matrix Multiplication: Chaining Transformations</h2>
+<p>If one matrix rotates and another matrix scales, what happens when you multiply the matrices together? You get a single matrix that rotates AND scales. The product of two transformation matrices is a new matrix that does both transformations in sequence.</p>
+<p>This is why matrix multiplication isn&#x27;t commutative. A × B ≠ B × A. Rotating then scaling gives a different result than scaling then rotating. The order matters because you&#x27;re chaining paths, and the path you take first changes where the second path starts from. Conditional probability again—where you ARE affects where you can GO.</p>
+<p>Matrix multiplication is also why this math is hard. To multiply a 3×3 matrix by another 3×3, you&#x27;re doing 27 multiplications and 18 additions. For a 4×4 matrix (common in 3D graphics), it&#x27;s 64 multiplications and 48 additions. For every single operation. That&#x27;s why we use computers. The concepts aren&#x27;t hard. The computation is long.</p>
+<h2>The Determinant: Does This Path Lead Somewhere?</h2>
+<p>Every square matrix has a number associated with it called the <strong>determinant</strong>. It tells you one crucial thing: does this transformation squish everything into a lower dimension?</p>
+<p>If the determinant is zero, the matrix collapses space. A 2D region gets squished to a line, or a point. Information is lost. You can&#x27;t reverse the transformation because multiple starting points all end up at the same place. Like taking a 3D sculpture and steamrolling it flat—you can&#x27;t unflatten it because you don&#x27;t know what the depth was.</p>
+<p>If the determinant is not zero, the transformation is reversible. You can undo it. You can go back. The paths work in both directions.</p>
+<p>For a 2×2 matrix [[a, b], [c, d]], the determinant is ad - bc. That&#x27;s it. Four numbers, two multiplications, one subtraction. And it tells you whether the entire transformation is reversible or not.</p>
+<p>The determinant also tells you how much the transformation scales areas. A determinant of 2 means areas double. A determinant of 0.5 means areas halve. A negative determinant means the transformation flips orientation—like looking in a mirror.</p>
+<h2>Eigenvalues and Eigenvectors: What Doesn&#x27;t Change</h2>
+<p>This is the Einstein part. This is the part that sounds scary and is actually the most beautiful idea in all of linear algebra.</p>
+<p><strong>Eigen</strong> is German for &quot;own&quot; or &quot;self.&quot; An eigenvector is a vector that, when transformed by a matrix, doesn&#x27;t change direction. It might get longer or shorter, but it keeps pointing the same way. The eigenvalue is the factor by which it scales.</p>
+<p>Picture a transformation that stretches space horizontally. Most vectors change direction—they get pulled sideways. But a vector pointing purely horizontal? It just gets longer. It doesn&#x27;t rotate. That vector is an eigenvector of the stretching transformation. The amount it gets stretched is the eigenvalue.</p>
+<p>Why does this matter? Because eigenvalues tell you what&#x27;s FUNDAMENTAL about a transformation. Strip away all the complexity—the rotations, the shearing, the mixing of dimensions—and the eigenvalues tell you the essential behavior. They&#x27;re the DNA of the matrix.</p>
+<p>In physics, eigenvalues are everywhere. The energy levels of an atom? Eigenvalues. The fundamental frequencies a bridge vibrates at? Eigenvalues. The modes of a quantum system? Eigenvalues. When physicists say they&#x27;re &quot;solving&quot; a system, they often mean finding the eigenvalues.</p>
+<p>Einstein&#x27;s general relativity uses matrices (technically tensors, which are matrices on steroids) to describe how space-time curves around mass. The eigenvalues of these tensors tell you the principal directions of curvature—how space is warped in the most fundamental way. That&#x27;s what E = mc² comes from. Energy, mass, and the speed of light are related through the eigenvalues of space-time&#x27;s curvature.</p>
+<p>Not that hard, right? An eigenvalue is just the answer to the question: what doesn&#x27;t change when everything else does? That&#x27;s a question a kid can understand. The math to compute it is long—but the concept is simple.</p>
+<h2>Systems of Equations: Many Questions, One Answer</h2>
+<p>Here&#x27;s where linear algebra connects to every other math you&#x27;ve learned.</p>
+<p>In algebra, you solved equations like 3x + 2 = 8. One equation, one unknown. Linear algebra handles systems—multiple equations, multiple unknowns, all at once.</p>
+<p><em>2x + 3y = 7</em></p>
+<p><em>4x - y = 1</em></p>
+<p>Two equations, two unknowns. This is the same as the matrix equation:</p>
+<p><em>| 2   3 |     | x |     | 7 |</em></p>
+<p><em>| 4  -1 |  ×  | y |  =  | 1 |</em></p>
+<p>The matrix encodes the structure of the system. The vector on the right is what you&#x27;re trying to reach. Solving means finding the input vector [x, y] that the matrix transforms into [7, 1].</p>
+<p>If the determinant isn&#x27;t zero, there&#x27;s exactly one solution—one path from input to output. If the determinant IS zero, either there&#x27;s no solution (the paths don&#x27;t reach there) or infinite solutions (many paths converge). The determinant tells you the structure of the answer before you compute it.</p>
+<h2>The Relativity of It All</h2>
+<p>Here&#x27;s why this chapter is called Matrix Re-lative. Everything in linear algebra is about relationships.</p>
+<p>Vectors describe relationships between points. Matrices describe relationships between spaces. Eigenvalues describe the relationship between a transformation and its essential behavior. Determinants describe the relationship between a transformation and reversibility.</p>
+<p>And the big one: linear algebra is the math of multiple things happening at once. Calculus handles one variable changing. Linear algebra handles all of them changing together. That&#x27;s why it&#x27;s the language of physics, computer graphics, machine learning, economics, engineering—anything where the answer isn&#x27;t a single number but a whole configuration of numbers that all depend on each other.</p>
+<p>Not easy math. Not short math. But honest math. It tells you how things relate, how they transform, and what survives when everything changes. If Eigen do this, yougen as well.</p>
+</main>
+<footer>
+  <nav class="chapter-nav">
+    <div class="nav-prev"><a href="/That-Math-Life-Yo/statistics.html">&larr; Statistics & Probabilities</a></div>
+    <div class="nav-toc"><a href="/That-Math-Life-Yo/">Table of Contents</a></div>
+    <div class="nav-next"><a href="/That-Math-Life-Yo/boolean-algebra.html">Boolean Algebra &rarr;</a></div>
+  </nav>
+</footer>
+</body>
+</html>

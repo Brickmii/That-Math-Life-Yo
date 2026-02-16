@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Statistics &amp; Probabilities — That Math Life Yo</title>
+<link rel="stylesheet" href="/That-Math-Life-Yo/style.css">
+</head>
+<body>
+<header>
+  <nav class="top-nav">
+    <a href="/That-Math-Life-Yo/" class="nav-title">That Math Life Yo</a>
+    <div class="nav-links">
+      <a href="/That-Math-Life-Yo/">Contents</a>
+      <a href="/That-Math-Life-Yo/That_Math_Life_Yo.docx" class="download-link">Download .docx</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title">Statistics &amp; Probabilities</h1>
+  <p class="subtitle">un+certainty</p>
+  <h2>&quot;So, You&#x27;re Saying There&#x27;s a Chance?&quot;</h2>
+<p>Classic… and a great way to think about statistics and probabilities because that&#x27;s what they are at heart. The chance itself. Typically, we tend to think of these things as risk assessment, and that&#x27;s not wrong. It&#x27;s just incomplete. It is not simply a risk assessment; it is a motion assessment. If I do motion x, motion y or motion z will happen as a result. In reality, it is a choice of path. Some of these paths are not truly linear but have linearity incorporated. You can walk into a grocery store and win the lottery, but only if you followed the linear procedure of purchasing the ticket.</p>
+<p>Let that sink in. Every &quot;random&quot; outcome has a chain of required motions behind it. The lottery looks random because we only see the final step—the drawing. But the path to getting there is completely deterministic. You decided to go to the store. You walked in. You picked a ticket. You paid for it. Every step was a choice, a motion, a cause. The randomness isn&#x27;t in the process. It&#x27;s in the outcome of the last step, and only because we don&#x27;t have enough information to predict it.</p>
+<p>That&#x27;s statistics and probability in a nutshell. It&#x27;s the math of what happens when you can&#x27;t see the whole path.</p>
+<h2>What Even Is Probability?</h2>
+<p>Here&#x27;s the simplest definition: probability is a number between 0 and 1 that measures how available a particular outcome is.</p>
+<p>0 means impossible. That path is blocked. You cannot take it.</p>
+<p>1 means certain. That path is the only one. You must take it.</p>
+<p>Everything in between is a measure of how open that path is relative to all the other paths available.</p>
+<p>Flip a coin. Two paths: heads or tails. If the coin is fair, both paths are equally available. So each one gets probability 1/2 = 0.5. Not because God decrees it. Not because of some mystical property of coins. Because there are two outcomes and the coin doesn&#x27;t favor either one. The availability is split equally.</p>
+<p>Roll a die. Six paths, equally available. Each gets 1/6. Simple division of availability across options.</p>
+<p>Now here&#x27;s where it gets interesting. Roll two dice and ask: what&#x27;s the probability the sum is 7? There are 36 total combinations (6 × 6). Six of them sum to 7: (1,6), (2,5), (3,4), (4,3), (5,2), (6,1). So the probability is 6/36 = 1/6.</p>
+<p>But the probability of rolling a sum of 2? Only one way: (1,1). So it&#x27;s 1/36. The paths aren&#x27;t equally available anymore. Some sums have more routes leading to them than others. Probability is measuring how many paths converge on an outcome.</p>
+<h2>The Sample Space: Your Map of All Possible Paths</h2>
+<p>Mathematicians call the set of all possible outcomes the <strong>sample space</strong>. This is your map. Every path you could possibly take is somewhere on this map.</p>
+<p>For a coin flip: {Heads, Tails}. That&#x27;s the whole map. Two locations.</p>
+<p>For a die: {1, 2, 3, 4, 5, 6}. Six locations.</p>
+<p>For two dice: {(1,1), (1,2), ... (6,6)}. Thirty-six locations.</p>
+<p>An <strong>event</strong> is a subset of the sample space—a collection of paths you care about. &quot;Rolling a 7&quot; is the event {(1,6), (2,5), (3,4), (4,3), (5,2), (6,1)}. Six paths out of thirty-six.</p>
+<p>Probability of an event = (paths in the event) / (total paths in the sample space).</p>
+<p>That&#x27;s it. That&#x27;s the fundamental formula. Everything else in probability is a variation on this theme: counting the paths you want, counting the total paths, dividing.</p>
+<h2>Conditional Probability: Narrowing the Map</h2>
+<p>This is where probability becomes motion assessment for real.</p>
+<p>Conditional probability asks: given that you&#x27;ve already taken some steps, what paths are still available?</p>
+<p>You&#x27;re in that grocery store. You&#x27;ve already walked in. You&#x27;ve already gone to the counter. You&#x27;ve already bought the lottery ticket. Given all those motions have occurred, what&#x27;s the probability you win?</p>
+<p>Before you left your house, the probability of winning was basically zero—because the path required steps you hadn&#x27;t taken yet. After buying the ticket, the probability jumps. Not because the lottery changed. Because YOUR position on the map changed. You&#x27;ve moved closer to the outcome.</p>
+<p>The notation is P(A|B), read &quot;probability of A given B.&quot; The vertical bar means &quot;given that B has already happened.&quot; It&#x27;s not just a filter. It&#x27;s telling you where you are on the map. B is your current position. A is where you&#x27;re trying to go. P(A|B) measures how available A is from where you&#x27;re standing now.</p>
+<p>The formula:</p>
+<p><em>P(A|B) = P(A and B) / P(B)</em></p>
+<p>Translation: the probability of reaching A from position B equals the probability of the path that goes through both A and B, divided by the probability of being at B in the first place.</p>
+<p>Think of it like this. You&#x27;re in a big building with 100 rooms. 30 rooms have windows. 10 rooms are on the top floor. 5 rooms are on the top floor AND have windows. If you know you&#x27;re on the top floor—that&#x27;s your B—then the probability of having a window is 5/10 = 0.5. Not 30/100. Because knowing your position eliminates rooms you can&#x27;t be in. The map got smaller.</p>
+<h2>Bayes&#x27; Theorem: Updating Your Beliefs</h2>
+<p>Thomas Bayes. 18th century Presbyterian minister. Figured out how to reverse conditional probability, and it changed everything.</p>
+<p>Here&#x27;s the problem: you know P(B|A)—the probability of seeing evidence B if hypothesis A is true. But what you want is P(A|B)—the probability that hypothesis A is true given that you observed evidence B. Those are not the same thing.</p>
+<p>Example. A medical test is 99% accurate. You test positive. What&#x27;s the probability you&#x27;re actually sick?</p>
+<p>Your gut says 99%. Your gut is wrong.</p>
+<p>If the disease affects 1 in 1000 people, then out of 1000 people tested: 1 sick person tests positive (true positive). About 10 healthy people also test positive (false positives, because the test is 99% accurate on 999 people, meaning about 1% error = ~10 false positives).</p>
+<p>So out of 11 positive tests, only 1 actually has the disease. The real probability is about 1/11 ≈ 9%. Not 99%.</p>
+<p>What happened? The <strong>base rate</strong> matters. How common the disease is changes the meaning of the test result. Bayes&#x27; theorem keeps track of this:</p>
+<p><em>P(A|B) = P(B|A) × P(A) / P(B)</em></p>
+<p>P(A) is the prior—what you believed before seeing evidence. P(B|A) is the likelihood—how expected the evidence is if your hypothesis is true. P(B) is the total probability of the evidence. P(A|B) is the posterior—your updated belief after seeing evidence.</p>
+<p>This is learning. Mathematically. You start with a belief, you observe the world, you update. Every time you update, you&#x27;re moving on the map. Your position changes. The available paths reconfigure.</p>
+<h2>Expected Value: The Average Path</h2>
+<p>If you could take every possible path at once and average where you end up, that&#x27;s the expected value.</p>
+<p>Flip a coin. Heads you win $10, tails you lose $5. Expected value: (0.5 × $10) + (0.5 × -$5) = $5 - $2.50 = $2.50.</p>
+<p>You won&#x27;t win $2.50 on any single flip. It&#x27;s not even a possible outcome. But if you flip 1000 times, your average gain per flip will be damn close to $2.50. The expected value is where the path leads over time.</p>
+<p>This is why casinos make money. Every game has a negative expected value for the player. Each individual play is uncertain—you might win big. But the path over thousands of plays leads exactly where the math says. The casino isn&#x27;t gambling. The casino is doing math. You&#x27;re the one gambling.</p>
+<p>Expected value is also why the lottery is a terrible investment and an okay entertainment purchase. The expected value of a $2 lottery ticket is about $0.80. You lose $1.20 on average. But you&#x27;re not buying the expected value. You&#x27;re buying the path—the possibility, the dream, the linear procedure of purchasing hope. As long as you know the math, that&#x27;s your choice to make.</p>
+<h2>Distributions: The Shape of Uncertainty</h2>
+<p>When you have a bunch of possible outcomes with different probabilities, the pattern they form is called a distribution. This is uncertainty given a shape.</p>
+<p>The most famous is the <strong>normal distribution</strong>—the bell curve. Heights, test scores, measurement errors, blood pressure—an insane number of things in nature follow this shape. Most values cluster near the middle (the mean), and fewer values appear as you move further out.</p>
+<p>Why does it show up everywhere? Because of the <strong>Central Limit Theorem</strong>—one of the most powerful results in all of statistics. It says: if you take any random process and average a bunch of samples from it, those averages will form a bell curve. Doesn&#x27;t matter what the original process looks like. Could be coin flips, dice rolls, heights of trees, anything. Average enough of them and you get a bell curve.</p>
+<p>That&#x27;s not a coincidence. It&#x27;s structure. When many small independent factors add together, they converge to the same shape. The universe has a default shape for &quot;lots of small things combining,&quot; and it&#x27;s the bell curve.</p>
+<p>The bell curve has two numbers that describe it completely: the <strong>mean</strong> (where the center is) and the <strong>standard deviation</strong> (how spread out it is). A tight bell curve means most values are close to the mean—high certainty. A wide bell curve means values are spread out—high uncertainty.</p>
+<p>See that? Certainty and uncertainty aren&#x27;t opposites. They&#x27;re the same measurement. The standard deviation. Small spread = certain. Large spread = uncertain. The bell curve doesn&#x27;t judge. It just shows you how wide the path is.</p>
+<h2>Statistics: Looking Backward</h2>
+<p>Probability looks forward—what might happen. Statistics looks backward—what already happened, and what can we learn from it.</p>
+<p>You collected data. A bunch of numbers. Measurements. Observations. Statistics is the toolkit for extracting meaning from those numbers.</p>
+<p>The <strong>mean</strong> (average) tells you the center of gravity. Add everything up, divide by how many. It&#x27;s where the data balances.</p>
+<p>The <strong>median</strong> tells you the middle value. Line everything up in order, pick the one in the center. This is more robust than the mean because one billionaire in a room of broke people doesn&#x27;t distort the median like it distorts the mean.</p>
+<p>The <strong>standard deviation</strong> tells you how spread out the data is. Are all the values clustered tight, or scattered all over? This is the uncertainty measurement from before, but applied to real observed data instead of theoretical outcomes.</p>
+<p>Here&#x27;s the deep insight: statistics is using the paths already taken to estimate the paths not yet taken. You measure 1000 people&#x27;s heights to predict the next person&#x27;s height. You track 10,000 medical outcomes to predict the next treatment&#x27;s effectiveness. The past is a map of the future—not a perfect map, but the best one you&#x27;ve got.</p>
+<h2>Correlation Is Not Causation (but It&#x27;s Not Nothing)</h2>
+<p>You&#x27;ve heard this a million times. &quot;Correlation is not causation.&quot; And it&#x27;s true. Ice cream sales and drowning deaths both increase in summer. Ice cream doesn&#x27;t cause drowning. Summer causes both.</p>
+<p>But here&#x27;s what people miss: correlation is still information. It&#x27;s telling you that two paths tend to move together. Maybe one causes the other. Maybe something else causes both. Maybe it&#x27;s pure coincidence. Correlation doesn&#x27;t tell you which—but it points you toward something worth investigating.</p>
+<p>Correlation is a number between -1 and 1. Positive correlation means they move together (one goes up, the other goes up). Negative correlation means they move opposite (one goes up, the other goes down). Zero means no relationship.</p>
+<p>The mistake isn&#x27;t finding correlations. The mistake is assuming the path you see is the only path that could explain it. That&#x27;s lazy navigation. Good statistics means finding the correlation, then doing the hard work of figuring out the actual structure underneath.</p>
+<h2>The Motion Assessment</h2>
+<p>Here&#x27;s what I want you to take away. Statistics and probability aren&#x27;t about predicting the future or analyzing the past. They&#x27;re about understanding the path structure of reality.</p>
+<p>Every choice you make is a motion through a space of possibilities. Some paths are wide open—high probability. Some are narrow—low probability. Some paths require other paths first—conditional probability. Some paths look available but lead nowhere—misleading correlations.</p>
+<p>The math doesn&#x27;t make your choices for you. The math shows you the map. What paths exist, how wide they are, where they&#x27;ve led before. What you do with that map is your decision.</p>
+<p>But here&#x27;s the thing Lloyd Christmas understood that a lot of smart people don&#x27;t: knowing the chance is small doesn&#x27;t mean the path doesn&#x27;t exist. It means the path is narrow. And sometimes narrow paths lead to the most interesting places.</p>
+<p>You just have to know you&#x27;re choosing to walk a narrow path. That&#x27;s the difference between a gambler and a fool. The gambler knows the odds. The fool doesn&#x27;t know there are odds.</p>
+<p>Un+certainty. They come together. You can&#x27;t have one without the other. And the math that handles both is the math of motion through possibility.</p>
+</main>
+<footer>
+  <nav class="chapter-nav">
+    <div class="nav-prev"><a href="/That-Math-Life-Yo/calculus.html">&larr; Calculus</a></div>
+    <div class="nav-toc"><a href="/That-Math-Life-Yo/">Table of Contents</a></div>
+    <div class="nav-next"><a href="/That-Math-Life-Yo/linear-algebra.html">Linear Algebra &rarr;</a></div>
+  </nav>
+</footer>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arithmetic — That Math Life Yo</title>
+<link rel="stylesheet" href="/That-Math-Life-Yo/style.css">
+</head>
+<body>
+<header>
+  <nav class="top-nav">
+    <a href="/That-Math-Life-Yo/" class="nav-title">That Math Life Yo</a>
+    <div class="nav-links">
+      <a href="/That-Math-Life-Yo/">Contents</a>
+      <a href="/That-Math-Life-Yo/That_Math_Life_Yo.docx" class="download-link">Download .docx</a>
+    </div>
+  </nav>
+</header>
+<main>
+  <h1 class="page-title">Arithmetic</h1>
+  <p class="subtitle">about function of values</p>
+  <h2>Counting Is Weird</h2>
+<p>You learned to count before you learned anything else mathematical. One, two, three, four. Simple. Obvious. So basic it doesn&#x27;t seem like it needs explanation.</p>
+<p>But here&#x27;s the thing: what the hell is counting?</p>
+<p>Seriously. You point at apples and say &quot;one, two, three&quot; and somehow you know there are three apples. What just happened? You mapped objects to numbers. But where did the numbers come from? What ARE they?</p>
+<p>This is arithmetic. Not &quot;how do I add 7 and 5&quot;—but what are 7 and 5 in the first place, and why does adding them do what it does?</p>
+<h2>Peano: Building Numbers From Almost Nothing</h2>
+<p>Late 1800s. Italian mathematician Giuseppe Peano asks: what&#x27;s the minimum you need to construct all the natural numbers? Not discover them floating in the universe somewhere—<em>construct</em> them. Build them. Prove they have to exist.</p>
+<p>He comes up with five axioms. Five statements. From these, all of natural number arithmetic follows.</p>
+<p>Here they are:</p>
+<p>Zero is a natural number.</p>
+<p>Every natural number has a successor (the next number).</p>
+<p>Zero is not the successor of any natural number.</p>
+<p>If two numbers have the same successor, they&#x27;re the same number.</p>
+<p>If something is true for zero, and being true for any number means it&#x27;s true for the next number, then it&#x27;s true for all natural numbers.</p>
+<p>That&#x27;s it. That&#x27;s the whole foundation.</p>
+<p>Look at what he&#x27;s doing. He&#x27;s not saying &quot;numbers exist.&quot; He&#x27;s saying &quot;here&#x27;s a starting point (zero), here&#x27;s a way to get the next thing (successor), and here&#x27;s how to make sure the chain works right.&quot;</p>
+<p>Zero. Successor. Induction. Everything else emerges.</p>
+<p>One is the successor of zero. Two is the successor of one. Addition is just repeated succession. Multiplication is repeated addition. The whole infinite tower of natural numbers, all the operations, all the properties—they come from five statements about zero and &quot;next.&quot;</p>
+<h2>The Successor Function</h2>
+<p>Let&#x27;s sit with this. The successor function is doing all the work.</p>
+<p>S(0) = 1 S(1) = 2 S(2) = 3</p>
+<p>It&#x27;s a machine. Put in a number, get out the next one. That&#x27;s the generator. One operation, applied over and over, builds infinity.</p>
+<p>This connects back to algebra. The successor function is the generator. The natural numbers are what it generates. The structure of arithmetic isn&#x27;t arbitrary—it&#x27;s what has to happen when you start at zero and keep hitting &quot;next.&quot;</p>
+<p>Addition falls out naturally: a + b means &quot;apply the successor function b times, starting from a.&quot; 3 + 2 means start at 3 and hit next twice. 3 → 4 → 5.</p>
+<p>Multiplication falls out too: a × b means &quot;add a to itself b times.&quot; 3 × 4 means 3 + 3 + 3 + 3.</p>
+<p>No magic. No memorization. Just zero, successor, and repetition.</p>
+<h2>Robinson: How Low Can You Go?</h2>
+<p>Peano&#x27;s axioms work. But mathematicians are obsessive. They want to know: what&#x27;s the MINIMUM? Can we use fewer axioms? What breaks if we remove one?</p>
+<p>Raphael Robinson, 1950. He strips it down further. Robinson arithmetic is weaker than Peano arithmetic—it doesn&#x27;t have full induction. But here&#x27;s the wild part: it&#x27;s still strong enough for Gödel&#x27;s incompleteness theorems to apply.</p>
+<p>What does that mean? It means even in this minimal system—barely enough structure to call it arithmetic—there are true statements you can&#x27;t prove. The incompleteness isn&#x27;t a bug in fancy advanced math. It&#x27;s baked in at the ground floor.</p>
+<p>Remember the sealed jar from set theory? The one you can&#x27;t open without destroying? Robinson arithmetic is barely a jar at all, and it&#x27;s STILL sealed. You can&#x27;t fully describe it from inside itself. The limit isn&#x27;t about complexity. It&#x27;s about self-reference. It&#x27;s fundamental.</p>
+<h2>Natural Numbers: The Counting Numbers</h2>
+<p>So what are natural numbers?</p>
+<p>They&#x27;re the counting numbers. 0, 1, 2, 3, 4... going on forever. (Some people start at 1 instead of 0. Mathematicians argue about this. It doesn&#x27;t matter that much.)</p>
+<p>Natural numbers are discrete. They&#x27;re separated. There&#x27;s nothing between 3 and 4. You step from one to the next with no in-between.</p>
+<p>This is the rhythm of counting. Distinct beats. One, then another, then another. No blur, no continuous flow. Discrete.</p>
+<p>And they go one direction. There&#x27;s no natural number before zero. No negative naturals. You start at the bottom and count up. That&#x27;s it.</p>
+<p>Natural numbers are the heartbeat of arithmetic. The most fundamental rhythm.</p>
+<h2>Integers: Both Directions</h2>
+<p>But what if you want to go backwards?</p>
+<p>You owe someone $5. You have $3. What&#x27;s your net? You need negative numbers. You need to count below zero.</p>
+<p>Integers are the natural numbers plus their negatives. ...−3, −2, −1, 0, 1, 2, 3... Now the number line extends both directions. You can add and subtract freely without falling off the edge.</p>
+<p>Integers form a group under addition. Every integer has an inverse—its negative. Add them together, you get zero. The structure is complete for addition.</p>
+<p>But not for division. 7 ÷ 2 isn&#x27;t an integer. We need more.</p>
+<h2>Rationals: The Fractions</h2>
+<p>A rational number is anything you can write as a fraction—one integer divided by another (except dividing by zero, which is forbidden).</p>
+<p>1/2, 3/4, −7/3, 22/7. All rational.</p>
+<p>Now we can divide freely (except by zero). The rationals are a field. Addition, subtraction, multiplication, division all work.</p>
+<p>And there&#x27;s something new: density. Between any two rational numbers, there&#x27;s another rational number. Always. Forever. Pick 1/2 and 3/4. Their average, 5/8, is between them. Pick 1/2 and 5/8. The average 9/16 is between those. You can always find more.</p>
+<p>No gaps? Not quite. There are holes in the rationals. Weird, sneaky holes.</p>
+<h2>The Holes: Irrational Numbers</h2>
+<p>Here&#x27;s a number: the square root of 2. √2. It&#x27;s the length of the diagonal of a square with side 1. Definitely a real length. Definitely exists.</p>
+<p>But it&#x27;s not rational. You cannot write it as a fraction. The Greeks proved this and it freaked them out so much they allegedly drowned the guy who discovered it.</p>
+<p>Proof: Assume √2 = a/b where a and b are integers with no common factors. Then 2 = a²/b², so a² = 2b². This means a² is even, so a is even. Write a = 2c. Then 4c² = 2b², so b² = 2c², meaning b is also even. But we said a and b have no common factors. Contradiction. √2 cannot be rational.</p>
+<p>There&#x27;s a hole in the rationals where √2 should be. And there are infinitely many such holes. π is irrational. e is irrational. Most numbers are irrational.</p>
+<p>The rationals are dense but full of holes. Like swiss cheese where the holes are also infinite.</p>
+<h2>Real Numbers: Filling The Gaps</h2>
+<p>The real numbers fill in all the holes. Every point on the number line is a real number. No gaps. Complete.</p>
+<p>Rationals plus irrationals equals reals. The continuous number line you picture in your head—that&#x27;s the reals.</p>
+<p>This is a different kind of infinity than the naturals. The naturals are countable—you can list them: 0, 1, 2, 3... You&#x27;ll never finish, but every natural has a spot on the list.</p>
+<p>The reals are uncountable. There&#x27;s no way to list them. Cantor proved this with diagonalization—any supposed list of all reals must be missing some. There are MORE reals than naturals, even though both are infinite.</p>
+<p>Let that sink in. Some infinities are bigger than others. The real line is thicker than the counting numbers. There are more points on a one-inch line segment than there are natural numbers in all of infinity.</p>
+<h2>Euler: The Master of Connection</h2>
+<p>Leonhard Euler. 1707–1783. Swiss. Probably the most productive mathematician who ever lived. Went blind in his sixties and his output actually INCREASED.</p>
+<p>Euler didn&#x27;t just solve problems. He saw connections. Relationships between things nobody knew were related.</p>
+<p>Here&#x27;s his most famous one:</p>
+<p>e^(iπ) + 1 = 0</p>
+<p>Look at that. Five numbers:</p>
+<p>e (the base of natural logarithms, approximately 2.718...)</p>
+<p>i (the imaginary unit, √−1)</p>
+<p>π (the ratio of circumference to diameter, approximately 3.14159...)</p>
+<p>1 (unity, the multiplicative identity)</p>
+<p>0 (the additive identity, the empty jar)</p>
+<p>And three operations: exponentiation, addition, equality.</p>
+<p>These numbers come from completely different places. e comes from calculus and growth. i comes from algebra and solving equations that shouldn&#x27;t have solutions. π comes from geometry and circles. 1 and 0 are the foundations from set theory.</p>
+<p>They shouldn&#x27;t have anything to do with each other. But Euler shows they&#x27;re all tied together in one elegant equation. Raise e to the power of i times π, add 1, and you get 0.</p>
+<p>This isn&#x27;t a coincidence. This is the universe telling you that mathematics is unified. Different branches, different origins, same underlying structure.</p>
+<h2>Functions of Values</h2>
+<p>So what&#x27;s the function of a specific value? What does 7 DO that 6 doesn&#x27;t?</p>
+<p>7 is prime. It can&#x27;t be broken into smaller factors. It&#x27;s atomic. Indivisible under multiplication.</p>
+<p>6 is composite. 6 = 2 × 3. It has structure, parts, factors.</p>
+<p>Being prime isn&#x27;t just a label. It&#x27;s a FUNCTION. Primes behave differently. They&#x27;re the building blocks. The fundamental theorem of arithmetic says every integer greater than 1 is either prime or can be uniquely written as a product of primes. The primes are the atoms of multiplication.</p>
+<p>12 = 2² × 3. That&#x27;s its prime factorization. Its DNA. Its fingerprint. No other number has exactly that factorization.</p>
+<p>This is what arithmetic studies: the specific behaviors and relationships of specific values. Not &quot;numbers in general&quot; but &quot;what does THIS number do? What role does it play in the structure?&quot;</p>
+<h2>Divisibility: The Rhythm of Factors</h2>
+<p>Divisibility creates a rhythm across the integers.</p>
+<p>Every 2nd number is divisible by 2. Every 3rd by 3. Every 6th by both 2 and 3.</p>
+<p>Count: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12...</p>
+<p>The multiples of 2: 2, 4, 6, 8, 10, 12... The multiples of 3: 3, 6, 9, 12... The multiples of 6: 6, 12...</p>
+<p>These rhythms overlap and interfere like waves. Where they sync up, you get common multiples. The least common multiple of 2 and 3 is 6—the first place their rhythms align.</p>
+<p>Greatest common divisor goes the other way. What&#x27;s the biggest number that divides both 12 and 18? Well, 12 = 2² × 3 and 18 = 2 × 3². They share a 2 and a 3. So GCD(12, 18) = 6.</p>
+<p>These aren&#x27;t just computational tricks. They&#x27;re the structure of how numbers relate to each other. The harmonic relationships. The music underneath.</p>
+<h2>Zero and One Again</h2>
+<p>Zero is the additive identity. Add zero to anything, nothing changes. x + 0 = x. Zero is neutral in the world of addition. The empty jar.</p>
+<p>One is the multiplicative identity. Multiply anything by one, nothing changes. x × 1 = x. One is neutral in the world of multiplication. The sealed jar. Unity.</p>
+<p>But look at what they DO in each other&#x27;s worlds:</p>
+<p>Multiply by zero, you get zero. Always. x × 0 = 0. Zero annihilates under multiplication. It destroys everything.</p>
+<p>Add one? You just get the successor. 5 + 1 = 6. One is the fundamental step in addition. The generator.</p>
+<p>Zero and one aren&#x27;t just numbers. They&#x27;re operators. They have different functions depending on what operation you&#x27;re using. They&#x27;re the boundaries, the identities, the special cases that define the structure.</p>
+<h2>Why Arithmetic Matters</h2>
+<p>Arithmetic is where abstraction meets specificity. Algebra gives you the general laws—groups, rings, fields. Set theory gives you the foundations—elements, collections, containment. But arithmetic is where you see how actual individual values live inside those structures.</p>
+<p>7 isn&#x27;t a variable. 7 is 7. It has specific properties. Specific relationships. A specific place in the web of numbers.</p>
+<p>The function of values: what each specific number does, how it behaves, where it fits. Not numbers in general—THIS number. THIS value.</p>
+<p>You do arithmetic every day. Every time you count, measure, compare quantities, check your bank account, figure out if you have enough. This is the math closest to daily life.</p>
+<p>But now you see it&#x27;s not separate from the abstract stuff. It&#x27;s the same structure, just zoomed in. The view from inside the numbers, living among specific values instead of floating above them in generality.</p>
+</main>
+<footer>
+  <nav class="chapter-nav">
+    <div class="nav-prev"><a href="/That-Math-Life-Yo/intro.html">&larr; Intro</a></div>
+    <div class="nav-toc"><a href="/That-Math-Life-Yo/">Table of Contents</a></div>
+    <div class="nav-next"><a href="/That-Math-Life-Yo/algebra.html">Algebra &rarr;</a></div>
+  </nav>
+</footer>
+</body>
+</html>
